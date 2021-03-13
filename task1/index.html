@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/style.css">
+		<title>School Managment System</title>
+	</head>
+	<body>
+		<div class="container">
+				<!-- student name -->
+				<div class="from-control">
+					<label for="name">Student Name</label><br>
+					<input type="text" id="name" placeholder="jo aqra" />
+				</div>
+				<!-- student name -->
+
+				<!-- student id -->
+				<div class="from-control">
+					<label for="idNumber">Student ID</label><br>
+					<input type="number" id="idNumber" placeholder="411420876" />
+				</div>
+				<!-- student id -->
+
+				<!-- student gdpa -->
+				<div class="from-control">
+					<label for="gdpa">Student GDPA</label><br>
+					<input type="number" id="gdpa" placeholder="3.50" />
+				</div>
+				<!-- student gdpa -->
+
+				<button id="submit" type="submit">Add Student</button><br>
+				<button id="submit" type="submit" onclick="display();">display Students</button>
+				<div id="display"></div>
+				<button id="submit" type="submit" onclick="Update();">Update Student</button>
+				<!-- student id -->
+				<div class="from-control">
+					<label for="idNumber"> Enter the id you want to Update</label><br>
+					<input type="number" id="id_To_Update" placeholder="" />
+				</div>
+
+				<div class="from-control">
+					<label for="name"> new Student Name</label><br>
+					<input type="text" id="Update_Name" placeholder="" />
+				</div>
+				<!-- student name -->
+
+				<!-- student id -->
+				<div class="from-control">
+					<label for="idNumber"> new Student ID</label><br>
+					<input type="number" id="Update_Id" placeholder="" />
+				</div>
+				<!-- student id -->
+
+				<!-- student gdpa -->
+				<div class="from-control">
+					<label for="gdpa"> new Student GDPA</label><br>
+					<input type="number" id="Update_Gdpa" placeholder="" />
+				</div>
+				<button id="submit" type="submit" onclick="Delete_std();">delete Student</button>
+
+				<div class="from-control">
+					<label for="gdpa"> std ID for delete</label><br>
+					<input type="number" id="idDelete" placeholder="" />
+				</div>
+		<script src="./src/main.js"></script>
+	</body>
+</html>
